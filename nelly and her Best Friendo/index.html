@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonelly & Her Best Friend</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./icon.png" type="image/png">
+</head>
+<body>
+
+<section>
+    <h2><an style="color:purple">Antonelly</an> & <be style="color: yellow;">Nuno</be></h2>
+    <div class="banner">
+         <div class="blocks"></div> 
+    </div>
+</section>
+
+
+<Friend> De:<an style="color:purple; letter-spacing: 1px;">Antonelly</an> <br> Para:<be style="letter-spacing: 1px;color: yellow;">Napoleão</be>
+    <br><br>
+    EU  TE  AMO MAS SE VOCÊ ME TROCAR <br> POR OUTRA EU TE QUEBRO NA PORRADA,<br> TÁ ENTENDENDO???!
+</Friend>
+    
+
+<div id ="bg"></div>
+
+
+
+<script>
+
+
+const banner = document.getElementsByClassName("banner")[0];
+const blocks = document.getElementsByClassName("blocks");
+
+
+for(var i = 1; i < 400; i++)
+{
+
+banner.innerHTML += "<div class='blocks'></div>" 
+blocks[i].style.animationDelay = `${i * 0.05}s`;
+
+}
+
+//------------------ for colours
+
+const bg = document.getElementById("bg");
+   
+   function randomColor()
+   {
+
+       return Math.floor(Math.random() * 255);
+
+   }
+
+   bg.addEventListener("click",()=>
+   {
+       bg.style.backgroundColor ='rgba('+randomColor()+','+randomColor()+','+randomColor()+')'
+   })
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
